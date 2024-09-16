@@ -65,6 +65,14 @@ Deletes a blog post using the IndieCMS API.
 await indieCMS.deletePost("post-id");
 ```
 
+### `indieCMS.deleteBlogPost(postId: string)`
+
+Deletes a blog post using the IndieCMS API.
+
+```typescript
+await indieCMS.deleteBlogPost("post-id");
+```
+
 ## License
 
 This project is licensed under the MIT License.

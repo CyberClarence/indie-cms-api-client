@@ -2,7 +2,7 @@
   "name": "@cyberclarence/indie-cms",
   "module": "index.ts",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "IndieCMS API client",
   "author": "CyberClarence",
   "license": "MIT",
@@ -11,6 +11,7 @@
   "scripts": {
     "dev": "bun run index.ts",
     "start": "bun run index.ts",
+    "test": "bun test",
     "build": "bun build index.ts --outdir dist && bun build:types",
     "build:types": "tsc --emitDeclarationOnly --project tsconfig.types.json",
     "publish-module": "npm publish --access public"
