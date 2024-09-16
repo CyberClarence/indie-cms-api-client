@@ -4,6 +4,7 @@ type BlogPost = {
   tags: string[];
   imgUrl: string;
   slug: string;
+  description: string; // Added description
 };
 
 type InputBlogPost = {
@@ -12,6 +13,7 @@ type InputBlogPost = {
   tags: string[];
   imgUrl: string;
   slug: string;
+  description: string;
 };
 
 type ResponseBlogPost = {
@@ -24,6 +26,7 @@ type ResponseBlogPost = {
   created_at: number;
   updated_at: number;
   project_id: string;
+  description: string;
 };
 
 export class IndieCMSClient {

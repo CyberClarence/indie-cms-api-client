@@ -11,6 +11,7 @@ const newPost = {
   tags: ["test", "bun"],
   imgUrl: "https://example.com/test-image.jpg",
   slug: "test-post-" + Date.now(),
+  description: "This is a test post description.",
 };
 
 describe("IndieCMSClient", () => {
@@ -48,6 +49,7 @@ describe("IndieCMSClient", () => {
       tags: ["test", "bun", "updated"],
       imgUrl: "https://example.com/updated-test-image.jpg",
       slug: "updated-test-post-" + Date.now(),
+      description: "This is an updated test post description.",
     };
 
     const response = await client.updateBlogPost(createdPostId, updatedPost);
