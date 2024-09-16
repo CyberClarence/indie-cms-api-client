@@ -2,7 +2,7 @@
   "name": "@cyberclarence/indie-cms",
   "module": "index.ts",
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "IndieCMS API client",
   "author": "CyberClarence",
   "license": "MIT",

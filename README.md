@@ -1,6 +1,6 @@
 # IndieCMS API client
 
-IndieCMS API client is a TypeScript library for interacting with the IndieCMS API. It provides a simple and intuitive interface for managing blog posts through the IndieCMS platform.
+IndieCMS API client is a TypeScript library for interacting with the API of the headless CMS [IndieCMS.io](https://indiecms.io). It provides a simple and intuitive interface for managing blog posts through the IndieCMS platform.
 
 ## Installation
 
