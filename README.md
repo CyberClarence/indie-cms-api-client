@@ -24,53 +24,56 @@ const indieCMS = new IndieCMS({
 
 ## Methods
 
-### `indieCMS.getPosts()`
+### `listPosts()`
 
-Retrieves a list of all blog posts from the IndieCMS API.
+Retrieves a list of all blog posts for the authenticated project.
 
 ```typescript
-const posts = await indieCMS.getPosts();
-console.log(posts);
+const posts = await indieCMS.listPosts();
 ```
 
-### `indieCMS.createPost(post: Post)`
+### `getPost(slug: string)`
 
-Creates a new blog post using the IndieCMS API.
+Retrieves a single blog post by its slug.
+
+```typescript
+const post = await indieCMS.getPost("your-post-slug");
+```
+
+### `createPost(post: Post)`
+
+Creates a new blog post.
 
 ```typescript
 const newPost = await indieCMS.createPost({
   title: "New Post",
   content: "This is the content of the new post.",
+  tags: ["tag1", "tag2"],
+  imgUrl: "https://example.com/image.jpg",
+  slug: "new-post",
 });
-console.log(newPost);
 ```
 
-### `indieCMS.updatePost(postId: string, post: Post)`
+### `updatePost(id: string, post: Post)`
 
-Updates an existing blog post using the IndieCMS API.
+Updates an existing blog post by its ID.
 
 ```typescript
-const updatedPost = await indieCMS.updatePost("post-id", {
+const updatedPost = await indieCMS.updatePost("your-post-id", {
   title: "Updated Post",
   content: "This is the updated content of the post.",
+  tags: ["tag1", "tag3"],
+  imgUrl: "https://example.com/updated-image.jpg",
+  slug: "updated-post",
 });
-console.log(updatedPost);
 ```
 
-### `indieCMS.deletePost(postId: string)`
+### `deletePost(id: string)`
 
-Deletes a blog post using the IndieCMS API.
-
-```typescript
-await indieCMS.deletePost("post-id");
-```
-
-### `indieCMS.deleteBlogPost(postId: string)`
-
-Deletes a blog post using the IndieCMS API.
+Deletes a blog post by its ID.
 
 ```typescript
-await indieCMS.deleteBlogPost("post-id");
+await indieCMS.deletePost("your-post-id");
 ```
 
 ## License
