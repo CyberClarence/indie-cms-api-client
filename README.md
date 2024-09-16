@@ -51,6 +51,7 @@ const newPost = await indieCMS.createPost({
   tags: ["tag1", "tag2"],
   imgUrl: "https://example.com/image.jpg",
   slug: "new-post",
+  description: "This is the description of the new post.",
 });
 ```
 
@@ -65,6 +66,7 @@ const updatedPost = await indieCMS.updatePost("your-post-id", {
   tags: ["tag1", "tag3"],
   imgUrl: "https://example.com/updated-image.jpg",
   slug: "updated-post",
+  description: "This is the updated description of the post.",
 });
 ```
 
