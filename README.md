@@ -2,6 +2,21 @@
 
 IndieCMS API client is a TypeScript library for interacting with the API of the headless CMS [IndieCMS.io](https://indiecms.io). It provides a simple and intuitive interface for managing blog posts through the IndieCMS platform.
 
+## 🎨 New: Landing Page & Design System
+
+This project now includes a **modern, fully responsive landing page** and a comprehensive **design system**:
+
+- **[View Landing Page](landing/index.html)** - Showcase page with interactive features
+- **[Design Guidelines](DESIGN_GUIDELINES.md)** - Complete design system documentation
+- **[Design Tokens](design-system/tokens.css)** - Reusable design variables
+
+The landing page features a clean, developer-focused design with:
+- Interactive code examples
+- Smooth animations
+- Mobile-responsive layout
+- Accessibility features (WCAG AA compliant)
+- Modern color palette (purple/blue gradient theme)
+
 ## Installation
 
 You can install the IndieCMS API client using npm:
